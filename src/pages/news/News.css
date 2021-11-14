@@ -2,6 +2,7 @@
   color: #19345e;
 }
 .cover {
+  width: auto;
   height: 500px;
   background-size: cover;
 }
