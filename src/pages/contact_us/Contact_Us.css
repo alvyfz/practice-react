@@ -1,0 +1,52 @@
+.left {
+  /* background-image: url(images/bg.png); */
+  height: 802px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.brand {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  height: 142px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50%;
+  opacity: 0.65;
+}
+
+.kanan {
+  padding-top: 85px;
+  color: #19345e;
+}
+#button {
+  border-radius: 23px;
+  background-color: #f47522;
+  color: white;
+  width: 96px;
+  margin-top: 15px;
+}
+tag {
+  color: red;
+}
+
+#phonenumbertext {
+  color: red;
+  font-size: small;
+}
+#emailtext {
+  color: red;
+  font-size: small;
+}
+#fullnametext {
+  color: red;
+  font-size: small;
+}
+.formText {
+  color: red;
+}

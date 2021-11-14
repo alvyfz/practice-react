@@ -1,0 +1,23 @@
+.navbar-nav > li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar-img {
+  height: 50px;
+  margin-top: 5px;
+}
+.kanan-nav {
+  margin: 5px 20px 5px 30px;
+  padding-bottom: 5px;
+  color: #19345e;
+  font-weight: 500;
+}
+.kanan-nav-active {
+  margin: 5px 20px 5px 30px;
+  padding-bottom: 5px;
+  color: #f47522;
+  font-weight: 500;
+}
+.navbarK {
+  background-color: white;
+}

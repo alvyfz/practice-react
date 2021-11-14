@@ -1,0 +1,13 @@
+* {
+  color: #19345e;
+}
+.cover {
+  height: 500px;
+  background-size: cover;
+}
+.h1 {
+  margin-top: 300px;
+}
+.head:hover {
+  color: #19345e;
+}

@@ -1,0 +1,44 @@
+body {
+  color: #19345e;
+}
+.jumbotron {
+  /* background-image: url(../../images/bg-img.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 50px;
+}
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 355px;
+  height: 355px;
+  border-radius: 50%;
+}
+.jumbotron-content {
+  padding-top: 70px;
+}
+.name {
+  font-size: 84px;
+  color: #19345e;
+  font-weight: bold;
+}
+.desc {
+  font-size: 35px;
+  color: #19345e;
+}
+.hi {
+  font-size: 25px;
+  color: #19345e;
+}
+.kanan {
+  padding-top: 44px;
+}
+#button-utama {
+  border-radius: 23px;
+  background-color: #f47522;
+  width: 150px;
+  color: white;
+  margin-top: 25px;
+}

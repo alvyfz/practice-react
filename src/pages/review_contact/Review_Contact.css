@@ -1,0 +1,42 @@
+* {
+  color: #19345e;
+}
+
+#halaman1 {
+  padding-top: 150px;
+  /* background-image: url("../assets/bg-review.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 900px;
+}
+.card {
+  /* margin-top: 100px; */
+  border: #ccd7eb solid 1px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 600px;
+  height: auto;
+}
+.titikdua {
+  text-align: right;
+}
+.message {
+  font-style: italic;
+  padding-top: 80px;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+#thanks {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+#button {
+  border-radius: 23px;
+  background-color: #f47522;
+  color: white;
+  width: 96px;
+  margin-top: 15px;
+}
