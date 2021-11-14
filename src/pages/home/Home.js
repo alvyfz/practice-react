@@ -50,14 +50,14 @@ function Home() {
 
           <div className="jumbotron-content">
             <Row>
-              <Col md={5}>
+              <Col md="auto" xs="auto" sm="auto" lg={5}>
                 <img
                   className="avatar img-responsive "
                   src="/images/avatar.jpg"
                   alt="avatar img-responsive"
                 />
               </Col>
-              <Col className="kanan" md={7}>
+              <Col className="kanan" md="auto" xs="auto" sm="auto" lg={7}>
                 <h4 className="hi">Hi, My name is</h4>
                 <h1 className="name">Anne Sullivan</h1>
                 <h3 className="desc">I build things for the web</h3>

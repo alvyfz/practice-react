@@ -7,7 +7,7 @@ export default function NavBar() {
     <>
       <Container>
         <Row className="justify-content-md-start">
-          <Col md={7} className="d-none d-md-block">
+          <Col lg={7} className="d-none d-lg-block">
             <Navbar.Brand href="/home">
               <img
                 className="navbar-img"
@@ -16,7 +16,7 @@ export default function NavBar() {
               />
             </Navbar.Brand>
           </Col>
-          <Col md={5}>
+          <Col lg={5}>
             <Navbar bg="white" expand="lg" className="navbarK">
               <Container fluid>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

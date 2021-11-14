@@ -65,7 +65,14 @@ function News() {
         <Row>
           {news?.slice(1).map((v, i) => {
             return (
-              <Col key={i} md={3} style={{ marginTop: "20px" }}>
+              <Col
+                key={i}
+                md="auto"
+                xs="auto"
+                sm="auto"
+                lg={3}
+                style={{ marginTop: "20px" }}
+              >
                 {" "}
                 <CardNews
                   title={v.title}
