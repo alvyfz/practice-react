@@ -7,15 +7,25 @@ import axios from "axios";
 function News() {
   const [news, setNews] = useState([]);
   useEffect(() => {
-    const getNews = async () => {
-      const response = await axios(
-        "https://newsapi.org/v2/top-headlines?country=id&category=technology&apiKey=160115ded7b948d29103ec8a464f79b8"
-      );
-      const res = await response.data.articles;
-      console.log("dawjfbajkfbjawf", res);
-      setNews(res);
+    var options = {
+      method: "GET",
+      url: "https://free-news.p.rapidapi.com/v1/search",
+      params: { q: "technology", lang: "en" },
+      headers: {
+        "x-rapidapi-host": "free-news.p.rapidapi.com",
+        "x-rapidapi-key": "05d34b2decmsh889c0ea072fcadap13a45ejsn312d8a1c70e5",
+      },
     };
-    getNews();
+
+    axios
+      .request(options)
+      .then(function (response) {
+        console.log(response.data.articles);
+        setNews(response.data.articles);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
   }, []);
   // let news1image = news[0]?.urlToImage;
   //   const news1title = news[0].title;
@@ -24,14 +34,14 @@ function News() {
       <NavBar />
       <div className="head">
         <a
-          href={news[0]?.url}
+          href={news[0]?.link}
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
           <Container
             fluid
-            style={{ backgroundImage: `url('${news[0]?.urlToImage}')` }}
+            style={{ backgroundImage: `url('${news[0]?.media}')` }}
             className="cover"
           >
             <Row className="justify-content-md-center">
@@ -59,10 +69,10 @@ function News() {
                 {" "}
                 <CardNews
                   title={v.title}
-                  description={v.description}
-                  image={v.urlToImage}
-                  link={v.url}
-                  source={v.source.name}
+                  // description={v.summary}
+                  image={v.media}
+                  link={v.link}
+                  source={v.rights}
                 />
               </Col>
             );

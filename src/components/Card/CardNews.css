@@ -4,3 +4,11 @@
 .card {
   text-align: left;
 }
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 180px;
+}
+h4 {
+  vertical-align: sub;
+}

@@ -20,9 +20,11 @@ export default function CardNews({ image, description, link, title, source }) {
               objectFit: "cover",
             }}
           />
-          <Card.Body style={{ height: "450px" }}>
+          <Card.Body style={{ height: "300px" }}>
             <Card.Title>{title}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+            {/* <Card.Text>
+              <p>{description}</p>
+            </Card.Text> */}
             <p style={{ color: "blue" }}>{source}</p>
             <h4 style={{ textAlignLast: "left" }}>Read more</h4>
           </Card.Body>
