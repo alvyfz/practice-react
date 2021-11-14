@@ -63,7 +63,11 @@ function Home() {
                 <h3 className="desc">I build things for the web</h3>
                 <Link to="/contact">
                   {" "}
-                  <Button variant="warning" id="button-utama">
+                  <Button
+                    data-testid="button"
+                    variant="warning"
+                    id="button-utama"
+                  >
                     Get In Touch
                   </Button>
                 </Link>
